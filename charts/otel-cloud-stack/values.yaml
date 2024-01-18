@@ -252,9 +252,7 @@ daemonCollector:
         sampling_initial: 5
         sampling_thereafter: 200
       otlp:
-        endpoint: ingest.lightstep.com:443
-        headers:
-          "lightstep-access-token": "${LS_TOKEN}"
+        endpoint: victoria:4317
         sending_queue:
           enabled: true
           num_consumers: 4
@@ -408,9 +406,7 @@ clusterCollector:
         sampling_initial: 5
         sampling_thereafter: 200
       otlp:
-        endpoint: ingest.lightstep.com:443
-        headers:
-          "lightstep-access-token": "${LS_TOKEN}"
+        endpoint: victoria:4317
 
     service:
       pipelines:
@@ -521,9 +517,7 @@ tracesCollector:
 
     exporters:
       otlp:
-        endpoint: ingest.lightstep.com:443
-        headers:
-          "lightstep-access-token": "${LS_TOKEN}"
+        endpoint: victoria:4317
     service:
       pipelines:
         traces:
@@ -718,9 +712,7 @@ logsCollector:
 
     exporters:
       otlp:
-        endpoint: ingest.lightstep.com:443
-        headers:
-          "lightstep-access-token": "${LS_TOKEN}"
+        endpoint: victoria:4317
 
     service:
       pipelines:
