@@ -3,6 +3,6 @@ entries:
   otel-cloud-stack:
   - created: "2022-01-25T12:34:56.789Z"
     name: otel-cloud-stack
-    version: 1.0.0
+    version: 0.3.0
     urls:
     - https://github.com/bantex01/otel-collector-charts/charts/otel-cloud-stack/otel-cloud-stack-0.3.0.tgz
